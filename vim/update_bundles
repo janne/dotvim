@@ -1,15 +1,19 @@
 #!/usr/bin/env ruby
 
 git_bundles = [ 
+  "git://github.com/janne/markdown.vim.git",
+  "git://github.com/msanders/snipmate.vim.git",
+  "git://github.com/scrooloose/nerdtree.git",
   "git://github.com/tpope/vim-cucumber.git",
   "git://github.com/tpope/vim-endwise.git",
-  "git://github.com/scrooloose/nerdtree.git",
   "git://github.com/tpope/vim-ragtag.git",
   "git://github.com/tpope/vim-rails.git",
-  "git://github.com/msanders/snipmate.vim.git",
   "git://github.com/tpope/vim-surround.git",
-  "git://github.com/tpope/vim-vividchalk.git"
+  "git://github.com/tpope/vim-vividchalk.git",
 ]
+
+# Plugins not updated:
+# zencoding, vim-autocomplpop, tabular, command-t
 
 require 'fileutils'
 require 'open-uri'
