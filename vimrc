@@ -25,9 +25,6 @@ let mapleader = ","
 
 let g:sparkupNextMapping = "c-x c-e"
 
-" Load todo.txt and done.txt
-nmap gt :e ~/Dropbox/Documents/todo.txt<CR>vl:e ~/Dropbox/Documents/done.txt<CR>h
-
 " Switch j/k/0/$/^ to g-alternative
 noremap j gj
 noremap gj j
