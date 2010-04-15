@@ -17,25 +17,15 @@ set incsearch
 set ignorecase
 set linebreak
 
-" ZenCoding
-let g:user_zen_expandabbr_key = '<c-e>'
+" Autocommands
+autocmd BufWritePre *.rb,*.js,*.erb %substitute/ / /ge " Remove nbsp
+autocmd User Rails silent! Rlcd " Rails plugin
 
 " REST OF FILE CONTAINS MAPPINGS
 let mapleader = ","
 
-let g:sparkupNextMapping = "c-x c-e"
-
-" Switch j/k/0/$/^ to g-alternative
-noremap j gj
-noremap gj j
-noremap k gk
-noremap gk k
-noremap 0 g0
-noremap g0 0
-noremap $ g$
-noremap g$ $
-noremap ^ g^
-noremap g^ ^
+" ZenCoding
+let g:user_zen_expandabbr_key = '<c-e>'
 
 " Remap jump to tag
 map <silent> <C-p> <C-]>
@@ -43,8 +33,9 @@ map <silent> <C-p> <C-]>
 " Edit previously edited file
 map <silent> <C-t> <C-^>
 
-" Rails plugin
-autocmd User Rails silent! Rlcd
+" Map next/previous error to tab
+map <Tab> :cnext<CR>
+map <S-Tab> :cprevious<CR>
 
 " Command mode
 cnoremap <C-A> <Home>
@@ -64,17 +55,3 @@ map <D-2> :tabnext 2<CR>
 map <D-3> :tabnext 3<CR>
 map <D-4> :tabnext 4<CR>
 map <D-5> :tabnext 5<CR>
-map <D-6> :tabnext 6<CR>
-map <D-7> :tabnext 7<CR>
-map <D-8> :tabnext 8<CR>
-map <D-9> :tabnext 9<CR>
-imap <D-1> <ESC>:tabnext 1<CR>
-imap <D-2> <ESC>:tabnext 2<CR>
-imap <D-3> <ESC>:tabnext 3<CR>
-imap <D-4> <ESC>:tabnext 4<CR>
-imap <D-5> <ESC>:tabnext 5<CR>
-imap <D-6> <ESC>:tabnext 6<CR>
-imap <D-7> <ESC>:tabnext 7<CR>
-imap <D-8> <ESC>:tabnext 8<CR>
-imap <D-9> <ESC>:tabnext 9<CR>
-
