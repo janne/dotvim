@@ -46,9 +46,6 @@ map <silent> <C-p> <C-]>
 " Edit previously edited file
 map <silent> <C-t> <C-^>
 
-" NERDTree plugin
-nmap <leader>n :NERDTreeToggle<CR>
-
 " Rails plugin
 autocmd User Rails silent! Rlcd
 
