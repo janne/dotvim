@@ -1,4 +1,3 @@
-colorscheme vividchalk
 set guioptions-=T
 if has("gui_macvim")
   colorscheme macvim
