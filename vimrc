@@ -18,7 +18,7 @@ set ignorecase
 set linebreak
 
 " Autocommands
-autocmd BufWritePre *.rb,*.js,*.erb %substitute/ / /ge " Remove nbsp
+autocmd BufWritePre *.rb,*.js,*.erb,*.feature %substitute/ / /ge " Remove nbsp
 autocmd User Rails silent! Rlcd " Rails plugin
 
 " REST OF FILE CONTAINS MAPPINGS
