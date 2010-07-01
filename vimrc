@@ -21,6 +21,10 @@ set linebreak
 autocmd BufWritePre *.rb,*.js,*.erb,*.feature %substitute/ / /ge " Remove nbsp
 autocmd User Rails silent! Rlcd " Rails plugin
 
+" Highlight tabs and trailing whitespace (except on end of line)
+match ErrorMsg /\s\+\%#\@<!$\|\t\+/
+autocmd InsertLeave * redraw!
+
 " REST OF FILE CONTAINS MAPPINGS
 let mapleader = ","
 
@@ -30,6 +34,8 @@ let g:user_zen_expandabbr_key = '<c-e>'
 " Remap jump to tag
 map <silent> <C-p> <C-]>
 
+" Delete trailing space
+map <silent> gs m`:%s/\s\+$//<CR>``
 
 " Map next/previous error to tab
 map <Tab> :cnext<CR>
