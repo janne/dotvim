@@ -30,8 +30,6 @@ let g:user_zen_expandabbr_key = '<c-e>'
 " Remap jump to tag
 map <silent> <C-p> <C-]>
 
-" Edit previously edited file
-map <silent> <C-t> <C-^>
 
 " Map next/previous error to tab
 map <Tab> :cnext<CR>
