@@ -50,6 +50,8 @@ nnoremap gmu yyp<c-v>$r-
 nnoremap gmU yyp<c-v>$r=
 
 " Tab switching
+map <D-S-Left> :tabprevious<CR>
+map <D-S-Right> :tabnext<CR>
 map <D-1> :tabnext 1<CR>
 map <D-2> :tabnext 2<CR>
 map <D-3> :tabnext 3<CR>
