@@ -8,6 +8,7 @@ git_bundles = [
   "git://github.com/tpope/vim-ragtag.git",
   "git://github.com/tpope/vim-rails.git",
   "git://github.com/tpope/vim-surround.git",
+  "git://github.com/scrooloose/nerdtree.git"
 ]
 
 # Plugins not updated:
