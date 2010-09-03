@@ -8,7 +8,8 @@ git_bundles = [
   "git://github.com/tpope/vim-ragtag.git",
   "git://github.com/tpope/vim-rails.git",
   "git://github.com/tpope/vim-surround.git",
-  "git://github.com/scrooloose/nerdtree.git"
+  "git://github.com/scrooloose/nerdtree.git",
+  "git://git.wincent.com/command-t.git"
 ]
 
 # Plugins not updated:
@@ -26,7 +27,10 @@ git_bundles.each do |url|
   puts "  Unpacking #{url} into #{dir}"
   FileUtils.rm_rf dir
   `git clone #{url} #{dir}`
-  FileUtils.rm_rf(File.join(dir, ".git"))
+  if File.exists?("#{dir}/Rakefile")
+    puts "  Building #{dir}"
+    `cd #{dir}; rake make 2> /dev/null`
+  end
 end
 
 # Update helptags
