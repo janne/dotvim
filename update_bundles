@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-git_bundles = [ 
+git_bundles = [
   "git://github.com/janne/markdown.vim.git",
   "git://github.com/msanders/snipmate.vim.git",
   "git://github.com/tpope/vim-cucumber.git",
@@ -13,7 +13,7 @@ git_bundles = [
 ]
 
 # Plugins not updated:
-# zencoding, vim-autocomplpop, tabular, command-t
+# zencoding, tabular
 
 require 'fileutils'
 require 'open-uri'
