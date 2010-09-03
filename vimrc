@@ -31,11 +31,18 @@ let mapleader = ","
 " ZenCoding
 let g:user_zen_expandabbr_key = '<c-e>'
 
+" NERDTree
+map <silent> <Leader>n :NERDTreeToggle<CR>
+
 " Remap jump to tag
 map <silent> <C-p> <C-]>
 
 " Delete trailing space
-map <silent> gs m`:%s/\s\+$//<CR>``
+map <silent> <Leader>s m`:%s/\s\+$//<CR>``
+
+" Cucumber
+map <silent> <Leader>c :!cucumber %:=line('.')<CR> -f html\|bcat -h -T %<CR>
+map <silent> <Leader>C :!cucumber % -f html\|bcat -h -T %<CR>
 
 " Map next/previous error to tab
 map <Tab> :cnext<CR>
