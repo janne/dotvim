@@ -21,28 +21,18 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-require 'command-t/ext' # CommandT::Matcher
-require 'command-t/scanner'
+if !Object.const_defined?('Bundler')
+  require 'rubygems'
+  require 'bundler'
+  Bundler.setup
+end
+require 'rspec'
 
-module CommandT
-  class Base
-    def initialize path = Dir.pwd, options = {}
-      @scanner = Scanner.scanner path, options
-      @matcher = Matcher.new @scanner, options
-    end
+lib = File.expand_path('../ruby', File.dirname(__FILE__))
+unless $LOAD_PATH.include? lib
+  $LOAD_PATH.unshift lib
+end
 
-    # Options:
-    #   :limit (integer): limit the number of returned matches
-    def sorted_matches_for str, options = {}
-      @matcher.sorted_matches_for str, options
-    end
-
-    def flush
-      @scanner.flush
-    end
-
-    def path= path
-      @scanner.path = path
-    end
-  end # class Base
-end # CommandT
+RSpec.configure do |config|
+  config.mock_framework = :rr
+end

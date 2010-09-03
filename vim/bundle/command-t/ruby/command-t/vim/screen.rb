@@ -22,19 +22,11 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 module CommandT
-  module Scanner
-    # Common methods to be inherited by concrete subclasses.
-    class Base
-      def flush
-        @paths = nil
+  module VIM
+    module Screen
+      def self.lines
+        ::VIM::evaluate('&lines').to_i
       end
-
-      def path= str
-        if @path != str
-          @path = str
-          flush
-        end
-      end
-    end # class AbstractScanner
-  end # module Scanner
+    end # module Screen
+  end # module VIM
 end # module CommandT
