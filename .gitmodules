@@ -39,4 +39,4 @@
 	url = git://github.com/godlygeek/tabular.git
 [submodule "bundle/zencoding"]
 	path = bundle/zencoding
-	url = git@github.com:janne/zencoding-vim.git
+	url = git://github.com/janne/zencoding-vim.git
