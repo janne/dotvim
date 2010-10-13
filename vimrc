@@ -17,6 +17,9 @@ set incsearch
 set ignorecase
 set linebreak
 
+" Yankring
+let g:yankring_history_dir = '~/.vim'
+
 " Commands
 command! Done edit ~/Dropbox/PlainText/Done.txt
 command! Todo edit ~/Dropbox/PlainText/Todo.txt
