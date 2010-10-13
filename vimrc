@@ -17,6 +17,10 @@ set incsearch
 set ignorecase
 set linebreak
 
+" Commands
+command! Done edit ~/Dropbox/PlainText/Done.txt
+command! Todo edit ~/Dropbox/PlainText/Todo.txt
+
 " Autocommands
 autocmd BufWritePre *.rb,*.js,*.erb,*.feature %substitute/ / /ge " Remove nbsp
 autocmd User Rails silent! Rlcd " Rails plugin
