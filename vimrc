@@ -22,8 +22,8 @@ set clipboard=unnamed
 let g:yankring_history_dir = '~/.vim'
 
 " Commands
-command! Done edit ~/Dropbox/PlainText/Done.txt
-command! Todo edit ~/Dropbox/PlainText/Todo.txt
+command! Done edit ~/Dropbox/PlainText/TravelPartner/Done.txt
+command! Todo edit ~/Dropbox/PlainText/TravelPartner/Todo.txt
 
 " Autocommands
 autocmd BufWritePre *.rb,*.js,*.erb,*.feature %substitute/ / /ge " Remove nbsp
