@@ -26,6 +26,9 @@ set wildignore+=*~,*#
 " Auto adjust bars
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
+" Set colorscheme
+colorscheme desert256
+
 function! s:align()
   let p = '^\s*|\s.*\s|\s*$'
   if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
