@@ -21,6 +21,8 @@ set clipboard=unnamed
 " Yankring
 let g:yankring_history_dir = '~/.vim'
 
+set wildignore+=*~,*#
+
 " Auto adjust bars
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
