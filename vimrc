@@ -16,6 +16,7 @@ set autoread
 set incsearch
 set ignorecase
 set linebreak
+set clipboard=unnamed
 
 " Yankring
 let g:yankring_history_dir = '~/.vim'
