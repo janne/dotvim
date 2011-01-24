@@ -43,7 +43,7 @@ let g:user_zen_expandabbr_key = '<c-e>'
 map <silent> <Leader>n :NERDTreeToggle<CR>
 
 " Remap jump to tag
-map <silent> <C-p> <C-]>
+map <silent> å <C-]>
 
 " Delete trailing space
 map <silent> <Leader>s m`:%s/\s\+$//<CR>``
