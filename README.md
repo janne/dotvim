@@ -24,3 +24,10 @@ Switch to the `~/.vim` directory and fetch submodules
 
     cd ~/.vim
     git submodule update --init
+
+Updat submodules
+----------------
+
+When you later want to update all submodules, just do a:
+
+    git pullall
