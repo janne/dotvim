@@ -27,7 +27,7 @@ set wildignore+=*~,*#
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
 " Set colorscheme
-colorscheme desert256
+colorscheme railscasts
 
 function! s:align()
   let p = '^\s*|\s.*\s|\s*$'
