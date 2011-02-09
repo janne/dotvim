@@ -18,6 +18,10 @@ set ignorecase
 set linebreak
 set clipboard=unnamed
 
+"Directories for swp files
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup
+
 " Yankring
 let g:yankring_history_dir = '~/.vim'
 
