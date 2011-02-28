@@ -79,10 +79,6 @@ map <silent> <Leader>s m`:%s/\s\+$//<CR>``
 map <silent> <Leader>c :!bundle exec cucumber %:=line('.')<CR> -f html\|bcat -h -T %<CR>
 map <silent> <Leader>C :!bundle exec cucumber % -f html\|bcat -h -T %<CR>
 
-" Map next/previous error to tab
-map <Tab> :cnext<CR>
-map <S-Tab> :cprevious<CR>
-
 " Command mode
 cnoremap <C-A> <Home>
 cnoremap <C-E> <End>
