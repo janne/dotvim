@@ -40,3 +40,6 @@
 [submodule "bundle/zencoding"]
 	path = bundle/zencoding
 	url = git://github.com/janne/zencoding-vim.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
