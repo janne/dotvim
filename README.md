@@ -28,6 +28,6 @@ Switch to the `~/.vim` directory and fetch submodules
 Updat submodules
 ----------------
 
-When you later want to update all submodules, just do a:
+When you later want to update all submodules:
 
-    git pullall
+    git submodule foreach git pull --rebase origin master
