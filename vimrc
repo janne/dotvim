@@ -49,6 +49,7 @@ command! Done edit ~/Dropbox/PlainText/TravelPartner/Done.txt
 command! Todo edit ~/Dropbox/PlainText/TravelPartner/Todo.txt
 
 " Autocommands
+autocmd FocusGained * :CommandTFlush
 autocmd BufWritePre *.rb,*.js,*.erb,*.feature %substitute/ / /ge " Remove nbsp
 autocmd User Rails silent! Rlcd " Rails plugin
 autocmd BufRead,BufNewFile todo.txt,*.todo.txt set filetype=todo
@@ -65,6 +66,9 @@ map <right> :bnext<CR>
 
 " ZenCoding
 let g:user_zen_expandabbr_key = '<c-e>'
+
+" Command-T
+map <silent> <Leader>f :CommandTFlush<CR>
 
 " NERDTree
 map <silent> <Leader>n :NERDTreeToggle<CR>
