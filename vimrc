@@ -59,10 +59,9 @@ match ErrorMsg /\s\+\%#\@<!$\|\t\+/
 autocmd InsertLeave * redraw!
 
 " REST OF FILE CONTAINS MAPPINGS
-let mapleader = ","
-
 map <left> :bprevious<CR>
 map <right> :bnext<CR>
+let mapleader = " "
 
 " ZenCoding
 let g:user_zen_expandabbr_key = '<c-e>'
