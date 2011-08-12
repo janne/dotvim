@@ -2,6 +2,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 filetype plugin on
+filetype indent on
 syntax on
 
 runtime! macros/matchit.vim
