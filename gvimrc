@@ -1,6 +1,5 @@
 set guioptions-=T
 if has("gui_macvim")
-  colorscheme macvim
   set columns=140
   set lines=40
   set fuoptions=maxvert,maxhorz
