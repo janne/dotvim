@@ -59,8 +59,6 @@ match ErrorMsg /\s\+\%#\@<!$\|\t\+/
 autocmd InsertLeave * redraw!
 
 " REST OF FILE CONTAINS MAPPINGS
-map <left> :bprevious<CR>
-map <right> :bnext<CR>
 let mapleader = " "
 
 " ZenCoding
