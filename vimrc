@@ -23,9 +23,6 @@ set clipboard=unnamed
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
-" Yankring
-let g:yankring_history_dir = '~/.vim'
-
 set wildignore+=*~,*#
 
 " Auto adjust bars
