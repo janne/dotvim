@@ -62,6 +62,11 @@ autocmd InsertLeave * redraw!
 " REST OF FILE CONTAINS MAPPINGS
 let mapleader = " "
 
+" vim-commentary
+xmap ,,  \\
+nmap ,,  \\
+nmap ,,, \\\
+
 " ZenCoding
 let g:user_zen_expandabbr_key = '<c-e>'
 
