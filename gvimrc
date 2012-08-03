@@ -5,4 +5,5 @@ if has("gui_macvim")
   set fuoptions=maxvert,maxhorz
   set guifont=Monaco:h13
   set listchars=tab:▸\ ,eol:¬ " Use the same symbols as TextMate for tabstops and EOLs
+  set fullscreen
 endif
