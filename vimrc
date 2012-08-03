@@ -46,7 +46,7 @@ Bundle 'tpope/vim-surround'
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
-set wildignore+=*~,*#
+set wildignore+=*~,*#,public/assets/**
 
 " Auto adjust bars
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
