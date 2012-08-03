@@ -8,7 +8,7 @@ call vundle#rc()
 runtime! macros/matchit.vim
 
 set tabstop=2
-set smarttab
+set softtabstop=2
 set shiftwidth=2
 set autoindent
 set number
