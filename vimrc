@@ -48,22 +48,8 @@ set directory=~/.vim/backup
 
 set wildignore+=*~,*#,public/assets/**
 
-" Auto adjust bars
-inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
-
 " Set colorscheme
 colorscheme railscasts
-
-function! s:align()
-  let p = '^\s*|\s.*\s|\s*$'
-  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
-    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
-    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
-    Tabularize/|/l1
-    normal! 0
-    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
-  endif
-endfunction
 
 " Autocommands
 autocmd FocusGained * :CommandTFlush
@@ -115,10 +101,6 @@ map <silent> å <C-]>
 
 " Delete trailing space
 map <silent> <Leader>s m`:%s/\s\+$//<CR>``
-
-" Cucumber
-map <silent> <Leader>c :!bundle exec cucumber %:=line('.')<CR> -f html\|bcat -h -T %<CR>
-map <silent> <Leader>C :!bundle exec cucumber % -f html\|bcat -h -T %<CR>
 
 " Command mode
 cnoremap <C-A> <Home>
