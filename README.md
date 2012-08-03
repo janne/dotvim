@@ -4,9 +4,7 @@ Dotvim
 About
 -----
 
-A set of VIM configuration files. Uses tpope's excellent [pathogen](http://www.vim.org/scripts/script.php?script_id=2332) for easy handling of VIM plugins.
-
-Setup is inspired by [drew@vimcasts](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/)
+A set of VIM configuration files. Uses [vundle](https://github.com/gmarik/vundle) for easy handling of VIM plugins.
 
 Installation
 ------------
@@ -22,12 +20,13 @@ Create symlinks
 Switch to the `~/.vim` directory and fetch submodules
 -----------------------------------------------------
 
-    cd ~/.vim
-    git submodule update --init
+Start vim and run
 
-Updat submodules
-----------------
+    :BundleInstall
+
+Update submodules
+-----------------
 
 When you later want to update all submodules:
 
-    git submodule foreach git pull --rebase origin master
+    :BundleInstall!

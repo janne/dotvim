@@ -1,9 +1,9 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
 filetype plugin on
 filetype indent on
 syntax on
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
 runtime! macros/matchit.vim
 
@@ -18,6 +18,29 @@ set incsearch
 set ignorecase
 set linebreak
 set clipboard=unnamed
+
+" Vundle
+Bundle 'gmarik/vundle'
+Bundle 'git://git.wincent.com/command-t'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'sjl/gundo.vim'
+Bundle 'godlygeek/tabular'
+Bundle 'janne/markdown.vim'
+Bundle 'janne/zencoding-vim'
+Bundle 'kana/vim-fakeclip'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tjennings/git-grep-vim'
+Bundle 'tpope/vim-abolish'
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-ragtag'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
 
 "Directories for swp files
 set backupdir=~/.vim/backup
