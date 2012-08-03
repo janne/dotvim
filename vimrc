@@ -78,6 +78,9 @@ autocmd InsertLeave * redraw!
 " REST OF FILE CONTAINS MAPPINGS
 let mapleader = " "
 
+" Vertical split to alternative file
+map <C-w>t <C-w>v<C-w>l:A<CR>
+
 " vim-commentary
 xmap ,,  \\
 nmap ,,  \\
