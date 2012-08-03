@@ -81,6 +81,14 @@ let mapleader = " "
 " Vertical split to alternative file
 map <C-w>t <C-w>v<C-w>l:A<CR>
 
+" cnext/prev
+map <Left> :copen<CR>
+map <Right> :cclose<CR>
+map <Up> :cprevious<CR>
+map <Down> :cnext<CR>
+map <S-Up> :cpfile<CR>
+map <S-Down> :cnfile<CR>
+
 " vim-commentary
 xmap ,,  \\
 nmap ,,  \\
