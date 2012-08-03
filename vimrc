@@ -65,10 +65,6 @@ function! s:align()
   endif
 endfunction
 
-" Commands
-command! Done edit ~/Dropbox/PlainText/TravelPartner/Done.txt
-command! Todo edit ~/Dropbox/PlainText/TravelPartner/Todo.txt
-
 " Autocommands
 autocmd FocusGained * :CommandTFlush
 autocmd BufWritePre *.rb,*.js,*.erb,*.feature %substitute/ / /ge " Remove nbsp
