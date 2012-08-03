@@ -93,6 +93,9 @@ map <S-Down> :cnfile<CR>
 map <C-s> :write<CR>
 imap <C-s> <Esc>:write<CR>i
 
+" Copy current file and line number to unnamed register ("")
+nmap <Leader>l Orspec <Esc>"%pA:<C-R>=line(".")<CR><Esc>0d$"uu
+
 " vim-commentary
 xmap ,,  \\
 nmap ,,  \\
