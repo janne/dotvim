@@ -69,7 +69,7 @@ endfunction
 autocmd FocusGained * :CommandTFlush
 autocmd BufWritePre *.rb,*.js,*.erb,*.feature %substitute/ / /ge " Remove nbsp
 autocmd User Rails silent! Rlcd " Rails plugin
-autocmd BufRead,BufNewFile todo.txt,*.todo.txt set filetype=todo
+autocmd BufRead,BufNewFile *.txt set filetype=markdown
 
 " Highlight tabs and trailing whitespace (except on end of line)
 match ErrorMsg /\s\+\%#\@<!$\|\t\+/
