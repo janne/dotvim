@@ -89,6 +89,10 @@ map <Down> :cnext<CR>
 map <S-Up> :cpfile<CR>
 map <S-Down> :cnfile<CR>
 
+" save w/ ctrl-s
+map <C-s> :write<CR>
+imap <C-s> <Esc>:write<CR>i
+
 " vim-commentary
 xmap ,,  \\
 nmap ,,  \\
