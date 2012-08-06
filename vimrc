@@ -20,27 +20,25 @@ set linebreak
 set clipboard=unnamed
 
 " Vundle
-Bundle 'gmarik/vundle'
-Bundle 'git://git.wincent.com/command-t'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'sjl/gundo.vim'
+Bundle 'git://git.wincent.com/command-t'
+Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
-Bundle 'janne/markdown.vim'
-Bundle 'janne/zencoding-vim'
-Bundle 'kana/vim-fakeclip'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'msanders/snipmate.vim'
+Bundle 'mattn/zencoding-vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'sjl/gundo.vim'
 Bundle 'tjennings/git-grep-vim'
 Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
+Bundle 'vim-ruby/vim-ruby'
 
 "Directories for swp files
 set backupdir=~/.vim/backup
