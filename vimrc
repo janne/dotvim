@@ -21,7 +21,7 @@ set clipboard=unnamed
 
 " Vundle
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'git://git.wincent.com/command-t'
+Bundle 'kien/ctrlp.vim'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
 Bundle 'mattn/zencoding-vim'
@@ -50,7 +50,6 @@ set wildignore+=*~,*#,public/assets/**
 colorscheme railscasts
 
 " Autocommands
-autocmd FocusGained * :CommandTFlush
 autocmd BufWritePre *.rb,*.js,*.erb,*.feature %substitute/ / /ge " Remove nbsp
 autocmd User Rails silent! Rlcd " Rails plugin
 autocmd BufRead,BufNewFile *.txt set filetype=markdown
@@ -87,9 +86,6 @@ nmap ,,, \\\
 
 " ZenCoding
 let g:user_zen_expandabbr_key = '<c-e>'
-
-" Command-T
-map <silent> <Leader>f :CommandTFlush<CR>
 
 " NERDTree
 map <silent> <Leader>n :NERDTreeToggle<CR>
