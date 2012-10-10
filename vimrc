@@ -39,6 +39,8 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'kchmck/vim-coffee-script'
 
 "Directories for swp files
 set backupdir=~/.vim/backup
@@ -53,6 +55,7 @@ colorscheme railscasts
 autocmd BufWritePre *.rb,*.js,*.erb,*.feature %substitute/ / /ge " Remove nbsp
 autocmd User Rails silent! Rlcd " Rails plugin
 autocmd BufRead,BufNewFile *.txt set filetype=markdown
+autocmd BufRead,BufNewFile *.go set filetype=go
 
 " Highlight tabs and trailing whitespace (except on end of line)
 match ErrorMsg /\s\+\%#\@<!$\|\t\+/
