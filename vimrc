@@ -18,6 +18,7 @@ set incsearch
 set ignorecase
 set linebreak
 set clipboard=unnamed
+set encoding=utf-8
 
 " Vundle
 Bundle 'Lokaltog/vim-easymotion'
